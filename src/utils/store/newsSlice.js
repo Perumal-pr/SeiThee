@@ -17,7 +17,7 @@ export const LatestNews = createAsyncThunk("news/LatestNews",async ()=> {
 
 export const SearchNews = createAsyncThunk("news/SearchNews", async (search) => {
     const date = new Date().toISOString().split("T")[0];
-    const {data: {articles}} = await axios.get(`https://newsapi.org/v2/everything?q=${search}&sortBy=popularity&apiKey=${API_KEY}`);
+    const {data: {articles}} = await axios.get(`https://gnews.io/api/v4/search?q=${search}&lang=en&apikey=${API_KEY}`);
     return articles;
 })
 

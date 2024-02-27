@@ -11,7 +11,7 @@ function Cards({ latest, id }) {
       <Link to={latest.url}>
         <div className="news">
           <div className="top-card">
-            <img src={latest.urlToImage} />
+            <img src={latest.image} />
           </div>
           <div className="bottom-card"></div>
           <h4>{latest.title}</h4>
