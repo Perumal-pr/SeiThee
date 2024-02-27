@@ -33,7 +33,6 @@ const newsFeedSlice = createSlice({
         }),
         builder.addCase(LatestNews.fulfilled,(state,action) => {
             state.latest = action.payload;
-            console.log(action.payload);
             state.isLoaded = true;
         }),
         builder.addCase(SearchNews.pending,()=> {
