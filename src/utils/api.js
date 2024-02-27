@@ -1,3 +1,3 @@
-export const API_KEY = "985d8a5629f54be6b96a815e0ec962d7";
+export const API_KEY = "168cffb2e65704976351f76115788f5e";
 
-export const API_LINK = "https://newsapi.org/v2/";
+export const API_LINK = "https://gnews.io/api/v4/";

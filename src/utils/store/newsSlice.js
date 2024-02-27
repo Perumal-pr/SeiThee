@@ -10,7 +10,8 @@ const initialState = {
 }
 
 export const LatestNews = createAsyncThunk("news/LatestNews",async ()=> {
-   const {data: {articles}} = await axios.get(`https://newsapi.org/v2/top-headlines?country=in&apiKey=${API_KEY}`);
+   const {data: {articles}} = await axios.get(`https://gnews.io/api/v4/top-headlines?category=general&lang=en&country=in&apiKey=${API_KEY}`);
+   
     return articles;
 });
 
@@ -32,6 +33,7 @@ const newsFeedSlice = createSlice({
         }),
         builder.addCase(LatestNews.fulfilled,(state,action) => {
             state.latest = action.payload;
+            console.log(action.payload);
             state.isLoaded = true;
         }),
         builder.addCase(SearchNews.pending,()=> {
