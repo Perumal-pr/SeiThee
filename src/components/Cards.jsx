@@ -76,6 +76,12 @@ const Container = styled.div`
     img {
       width: 100%;
     }
+    &:hover {
+      width: fit-content;
+      img {
+        width: 100%;
+      }
+    }
   }
 `;
 

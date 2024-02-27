@@ -62,6 +62,7 @@ const Container = styled.div`
   }
   @media screen and (max-width: 600px) {
     width: max-width;
+    border-radius: 4px;
     overflow-x: hidden;
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -79,7 +80,8 @@ const Container = styled.div`
       padding: 0.5rem;
     }
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 420px) {
+    border-radius: 4px;
     input {
       width: 12rem;
     }
