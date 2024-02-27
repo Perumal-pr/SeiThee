@@ -11,7 +11,6 @@ const initialState = {
 
 export const LatestNews = createAsyncThunk("news/LatestNews",async ()=> {
    const {data: {articles}} = await axios.get(`https://gnews.io/api/v4/top-headlines?category=general&lang=en&country=in&apikey=${API_KEY}`);
-   console.log(articles);
     return articles;
 });
 
