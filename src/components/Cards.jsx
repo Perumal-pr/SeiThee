@@ -71,6 +71,12 @@ const Container = styled.div`
       display: block;
     }
   }
+  @media screen and (max-width: 600px) {
+    width: fit-content;
+    img {
+      width: 100%;
+    }
+  }
 `;
 
 export default Cards;

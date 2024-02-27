@@ -23,3 +23,38 @@
   border-radius: .3rem;
 
 }
+
+@media screen and (max-width: 600px){
+
+  body{
+    
+    width: auto;
+    overflow-x: hidden;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+  }
+    .title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      width: 6rem;
+      height: 3rem;
+      border-radius: .3rem;
+    }
+  .search-bar{
+    display: flex;
+    width: 18rem;
+    height: 3rem;
+    background-color: white;
+    box-shadow: 1px 4px 1px 0px rgba(0,0,0,.3), 1px 1px 5px 4px rgba(0,0,0,.2);
+    border-radius: .3rem;
+  
+  }
+}

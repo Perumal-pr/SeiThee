@@ -60,6 +60,25 @@ const Container = styled.div`
     width: 1.2rem;
     cursor: pointer;
   }
+  @media screen and (max-width: 600px) {
+    width: max-width;
+    overflow-x: hidden;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    padding-top: 0;
+    box-shadow: 1px 4px 1px 1px rgba(0, 0, 0, 0.2);
+    svg {
+      color: black;
+      padding: 0.5rem;
+      height: 2.3rem;
+      width: 2.5rem;
+      cursor: pointer;
+    }
+    input {
+      font-size: 1.5rem;
+      padding: 0.6rem;
+    }
+  }
 `;
 
 export default Header;
