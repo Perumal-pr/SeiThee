@@ -26,6 +26,7 @@ function Header({ SearchHandler }) {
             name="search"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
+            onKeyDown={(e) => e.key == "Enter" && SearchHandler(search)}
           />
           <FaSearch onClick={() => SearchHandler(search)} />
         </div>
