@@ -58,3 +58,17 @@
   
   }
 }
+
+@media screen and (max-width: 400px){
+  body{
+    width: auto;
+  }
+  .title{
+    width: 4.1rem;
+    font-size: 0.7rem;
+  }
+  .search-bar{
+    width: 16rem;
+  }
+}
+

@@ -76,7 +76,12 @@ const Container = styled.div`
     }
     input {
       font-size: 1.5rem;
-      padding: 0.6rem;
+      padding: 0.5rem;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    input {
+      width: 12rem;
     }
   }
 `;
