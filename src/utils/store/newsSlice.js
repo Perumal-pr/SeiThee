@@ -3,6 +3,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { API_KEY } from "../api";
 
+
 const initialState = {
     latest: [],
     isLoaded: false,
