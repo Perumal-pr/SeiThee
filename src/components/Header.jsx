@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import styled from "styled-components";
 import { FaSearch } from "react-icons/fa";
+import Menu from "../components/Menu";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
@@ -31,6 +32,7 @@ function Header({ SearchHandler }) {
           <FaSearch onClick={() => SearchHandler(search)} />
         </div>
       </div>
+      <Menu SearchHandler={SearchHandler} />
     </Container>
   );
 }
