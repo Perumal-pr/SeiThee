@@ -15,6 +15,7 @@ const Menu = ({ SearchHandler }) => {
         <option value="politics">politics</option>
         <option value="travel">travel</option>
         <option value="weather">weather</option>
+        <option value="science">science</option>
       </select>
     </Container>
   );
